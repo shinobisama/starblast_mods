@@ -1,0 +1,174 @@
+return model =
+  name: 'Hydrastar'
+  level: 5
+  model: 6
+  size: 1.7
+  specs:
+    shield:
+      capacity: [275,350]
+      reload: [6,9]
+    generator:
+      capacity: [60,110]
+      reload: [20,55]
+    ship:
+      mass: 300
+      speed: [70,90]
+      rotation: [52,80]
+      acceleration: [105,110]
+  bodies:
+    main:
+      section_segments: 12
+      offset:
+        x: 2
+        y: 0
+        z: 0
+      position:
+        x: [-2,0,0,0,0,0]
+        y: [-100,-95,0,10,100,105]
+        z: [0,0,0,0,0,0]
+      width: [0,10,30,20,20,0]
+      height: [0,5,30,25,15,0]
+      texture: [63,11,2,11,63]
+      propeller: false
+    cockpit:
+      section_segments: 8
+      offset:
+        x: 0
+        y: -32
+        z: 20
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-20,0,20,40,40]
+        z: [-7,-5,0,0,0]
+      width: [0,10,10,10,0]
+      height: [0,10,12,12,0]
+      texture: [10]
+    side_propulsors:
+      section_segments: 12
+      offset:
+        x: 60
+        y: 15
+        z: 0
+      position:
+        x: [0,0,0,0,0,0,0,0,0,0]
+        y: [-5,-15,-5,10,50,60,70,85,120,125]
+        z: [0,0,0,0,0,0,0,0,0,0]
+      width: [0,23,25,20,20,15,15,20,20,20]
+      height: [0,23,25,20,20,15,15,20,20,20]
+      propeller: true
+      texture: [11,63,8,8,5,63,5,8,14]
+    cannons:
+      section_segments: 12
+      offset:
+        x: 95
+        y: -2
+        z: 45
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-78,-80,-60,30,55,65,66]
+        z: [0,0,0,0,0,0,0]
+      width: [0,5,7,7,5,5,0]
+      height: [0,5,7,7,5,5,0]
+      angle: 0
+      laser:
+        damage: [2,6]
+        rate: 3
+        type: 2
+        speed: [110,190]
+        number: 2
+        error: 19
+      propeller: false
+      texture: [63,4,8,11,63,63]
+    cannons2:
+      section_segments: 12
+      offset:
+        x: 95
+        y: -2
+        z: -45
+      position:
+        x: [0,0,0,0,0,0,0]
+        y: [-78,-80,-60,30,60,65,66]
+        z: [0,0,0,0,0,0,0]
+      width: [0,5,7,7,5,5,0]
+      height: [0,5,7,7,5,5,0]
+      angle: 0
+      laser:
+        damage: [2,6]
+        rate: 3
+        type: 2
+        speed: [110,190]
+        number: 2
+        error: 19
+      propeller: false
+      texture: [63,4,8,11,63,63]
+  wings:
+    join:
+      offset:
+        x: 0
+        y: 25
+        z: 0
+      length: [50,50]
+      width: [40,20]
+      angle: [-1]
+      position: [0,30]
+      texture: [11]
+      doubleside: true
+      bump:
+        position: 0
+        size: 25
+    winglets:
+      offset:
+        x: 60
+        y: -40
+        z: 10
+      doubleside: true
+      length: [45,10]
+      width: [5,20,30]
+      angle: [50,-10]
+      position: [90,80,50]
+      texture: [11]
+      bump:
+        position: 10
+        size: 30
+    winglets2:
+      offset:
+        x: 60
+        y: -40
+        z: -10
+      doubleside: true
+      length: [45,10]
+      width: [5,20,30]
+      angle: [-50,-10]
+      position: [90,80,50]
+      texture: [11]
+      bump:
+        position: 10
+        size: 30
+    winglets3:
+      offset:
+        x: 70
+        y: 70
+        z: 10
+      doubleside: true
+      length: [55,10]
+      width: [20,10,0]
+      angle: [30]
+      position: [50,90,120]
+      texture: [63]
+      bump:
+        position: 15
+        size: 15
+    winglets4:
+      offset:
+        x: 70
+        y: 70
+        z: -10
+      doubleside: true
+      length: [55,10]
+      width: [20,10,0]
+      angle: [-30]
+      position: [50,90,120]
+      texture: [63]
+      bump:
+        position: 10
+        size: 15
