@@ -69,7 +69,7 @@ return model =
         z: [0,0,0,0,0,0,0]
       width: [0,5,7,7,5,5,0]
       height: [0,5,7,7,5,5,0]
-      angle: 0
+      angle: 6
       laser:
         damage: [2,6]
         rate: 3
@@ -91,7 +91,7 @@ return model =
         z: [0,0,0,0,0,0,0]
       width: [0,5,7,7,5,5,0]
       height: [0,5,7,7,5,5,0]
-      angle: 0
+      angle: 6
       laser:
         damage: [2,6]
         rate: 3
